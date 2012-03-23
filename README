@@ -1,0 +1,15 @@
+This is a very simple Python 2 module with one function returning the
+amount of time in milliseconds since last user activity. It only works
+under X11.
+
+To install it, run:
+
+python2 setup.py install
+
+To use its only function:
+
+import actmon
+actmon.get_idle_time()
+
+actmon.get_idle_time() returns the number of milliseconds since last
+user activity (mouse, keyboard) under X11.
