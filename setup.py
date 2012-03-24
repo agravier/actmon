@@ -35,7 +35,7 @@ if version < '2.2.3':
     DistributionMetadata.download_url = None
 
 setup(name = 'actmon',
-      version = '0.1b1',
+      version = '0.1',
       author = 'Alexandre Gravier',
       author_email = 'al.gravier@gmail.com',
       url = 'http://github.com/agravier/actmon',
@@ -45,12 +45,15 @@ setup(name = 'actmon',
       platforms = ['X11'],
       classifiers=[
         'Development Status :: 4 - Beta',
-        'Environment :: X11',
+        'Environment :: No Input/Output (Daemon)',
+        'Environment :: X11 Applications',
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Operating System :: POSIX',
-        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
         'Programming Language :: C',
-        'Topic :: Software Development :: System Administration'],
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: System :: Systems Administration',
+        'Topic :: System :: Monitoring'],
       ext_modules = [module])

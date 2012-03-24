@@ -31,6 +31,7 @@ along with actmon.  If not, see <http://www.gnu.org/licenses/>.
 #include <X11/extensions/scrnsaver.h>
 
 
+
 static PyObject * actmon_get_idle_time(PyObject *self, PyObject *args) {
   /* Returns idle time for the present display in milliseconds */
   time_t idle_time;
@@ -39,7 +40,8 @@ static PyObject * actmon_get_idle_time(PyObject *self, PyObject *args) {
   int screen;
   mit_info = XScreenSaverAllocInfo();
   if((display=XOpenDisplay(NULL)) == NULL) { 
-    
+    PyErr_SetString(PyExc_IOError,
+		    "The display cound not be open. Are you in X11?");
     return NULL; 
   }
   screen = DefaultScreen(display);
