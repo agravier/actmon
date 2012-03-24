@@ -55,7 +55,7 @@ static PyObject * actmon_get_idle_time(PyObject *self, PyObject *args) {
 static PyMethodDef actmon_methods[] = {
     {"get_idle_time",  actmon_get_idle_time, METH_NOARGS,
      "Returns idle time for the present display in milliseconds."},
-    {NULL, NULL, 0, NULL}        /* Sentinel */
+    {NULL}        /* Sentinel */
 };
 
 PyMODINIT_FUNC
