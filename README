@@ -2,7 +2,7 @@ This is a very simple Python 2 module with one function returning the
 amount of time in milliseconds since last user activity. It only works
 under X11.
 
-Dependencies: libxss, X11 xss development headers (`libxss-dev` package on Ubuntu)
+Dependencies: libxss, X11 xss development headers (libxss-dev package on Ubuntu)
 
 To install it, run:
 
